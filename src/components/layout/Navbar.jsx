@@ -25,9 +25,13 @@ export default function Navbar() {
                     }`}>
 
                     {/* Logo */}
-                    <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-primary" />
-                        <span className="font-bold tracking-tight text-lg">EcoSync</span>
+                    <div className="flex items-center gap-2 group cursor-pointer">
+                        <div className="relative w-8 h-8 flex items-center justify-center bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden group-hover:border-primary transition-colors">
+                            <div className="absolute inset-0 bg-primary/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="w-4 h-4 rounded-full border-2 border-primary border-t-transparent animate-[spin_3s_linear_infinite]" />
+                            <div className="absolute w-2 h-2 bg-primary rounded-full" />
+                        </div>
+                        <span className="font-bold tracking-tight text-lg group-hover:text-white transition-colors">ecoSync</span>
                     </div>
 
                     {/* Desktop Links */}
